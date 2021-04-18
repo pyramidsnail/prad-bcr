@@ -567,8 +567,8 @@ for ( i in seq(1, 13)){
 }
 
 ##### calculate module-trait correlation for the selected traits 
-survival <- read.table("~/projects/golden/prad/data/TCGA-PRAD.survival.tsv.gz", header = T, sep="\t")
-phenotype <- read.table("~/projects/golden/prad/data/TCGA-PRAD.GDC_phenotype.tsv.gz", header = T, sep="\t", quote = "\"")
+survival <- read.table("TCGA-PRAD.survival.tsv.gz", header = T, sep="\t")
+phenotype <- read.table("TCGA-PRAD.GDC_phenotype.tsv.gz", header = T, sep="\t", quote = "\"")
 
 datTraits <- phenotype[,c("submitter_id.samples","pathologic_T","pathologic_N", "clinical_T","biochemical_recurrence",
                           "days_to_first_biochemical_recurrence", "days_to_second_biochemical_recurrence","days_to_third_biochemical_recurrence",
